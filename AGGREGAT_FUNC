@@ -1,0 +1,18 @@
+MIN- MAX and AVERAGE 
+
+=> price columnu icinde bulunan max veya min degeri secerken 
+SELECT MAX(price) FROM car;
+SELECT MIN(price) FROM car;
+
+=> tum pricelarin ortalamasini bulmak icin de benzer bir yontem uygulariz
+SELECT AVG(price) FROM car;
+
+SELECT ROUND(AVG(price)) FROM car; => Sonucu yuvarlamak icin kullanilir.
+
+
+SELECT make, model, MIN(price) GROUP BY make,model;
+
+
+TUM BU FONKSİYONALRI ICINDE OLDUGUMUZ DURUMA GORE GRUPLAYARAK KULLANMALIYIZ. Ornegin markasi ayni olan tum araclarin 
+fiyatlarini toplayarak ekrana yazdiran sorgu:  
+=> test=# SELECT make , SUM(price) FROM car GROUP BY make;

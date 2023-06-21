@@ -1,0 +1,33 @@
+Table icerisindeki verileri istedigimiz gibi bolme carpma toplama gibi işlemler sonucu degitirerek ekrana yazabiliriz. 
+
+test=# Select id, model, make, price , price*.01 from car;
+test=# Select id, model, make, price , ROUND(price*.01,2) from car;
+test=# Select id, model, make, price , ROUND(price*.01,2),ROUND(price-price*.01,2) from car;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

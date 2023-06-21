@@ -1,0 +1,34 @@
+table lar icin kullanilan id parametresi bigInt formatindadir fakat otomatik olarak increment edilmesi icin 
+bu deger Bigserial olarak isaretlenir. 
+
+
+bigserial olarak isaretlenen veriler her tabloya yeni eleman eklendiginde otomatik olarak bir fonksiyon araciligiyla
+arttirilirlar ve son degerleri her daim fonksiyonun hafizasinda yer alir. 
+
+Bigserial alarak isaretlenmis olan degeri resetleyerek eger mumkunse istedigimiz noktaya cekebiliriz 
+=> Alter sequence person_id_seq restart with 10;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

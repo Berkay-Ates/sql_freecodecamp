@@ -1,0 +1,38 @@
+alias = takma ad
+
+alias olayı kullanılarak columnların isimlerini override edebiliriz. 
+
+columnlara isim vermek icin oluşan olan yeni column yanına AS ile cast etme işlemi uygulayarak yeni 
+isimlendirmesini yapabiliriz.
+=> Select id, model, make, price , ROUND(price*.01,2) AS ten_percent ,ROUND(price-price*.01,2) AS sale_price from car;
+
+-> bu yontemle istersek var olan columnları da override edebiliriz. 
+==> Select id, model, make, price as originalPrice , ROUND(price*.01,2) AS ten_percent , ROUND(price-price*.01,2)
+    AS sale_price from car;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

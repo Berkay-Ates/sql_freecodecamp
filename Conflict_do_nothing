@@ -1,0 +1,47 @@
+
+Sql sorugularimizda sorun cikarabilecegini dusundugumuz komutlarin soruna sebep olduklarinda bize herhangi bir sekilde 
+hata mesafi firlatmadan komutun yok sayilmasini saglayabiliriz. 
+
+test=# Insert into person (id,first_name,last_name,email,gender,birth_of_data,country_of_birth)
+test-# values (13,'Bruno','Emanuele','guncellenenEmail.com','Male',DATE '2023-05-06', 'Afghanistan')
+test-# ON CONFLICT (id) DO NOTHING; 
+
+=> Id de sorun yasanmasina ragmen digerleinin yine de guncellenmesini saglayabiliriz. 
+
+test=# Insert into person (id,first_name,last_name,email,gender,birth_of_data,country_of_birth)
+test-# values (13,'Bruno','Emanuele','guncellenenEmail.com','Male',DATE '2023-05-06', 'Afghanistan')
+test-# ON CONFLICT (id) DO UPDATE SET email = EXCLUDED.email , first_name = EXCLUDED.first_name;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

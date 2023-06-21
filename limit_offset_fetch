@@ -1,0 +1,29 @@
+
+Table icerisindeki elemanlarilimitleryerek secmek istersek LIMIT kelimsesini kullaniriz
+SELECT * FROM test LIMIT 10; -> ilk 10 tanesini al getir gibi 
+
+n. elemandan sonrakileri getir dersek bu defa kullanmamiz gereken komut OFFSET olur 
+SELECT * FROM test OFFSET 5; -> tepedekie 5 elemandan sonrakileri getir 
+
+ilk 5 ile 10 arasindaki elemanlari getirmek istersek de 
+SELECT * FROM test OFFSET 5 LIMIT 5; komutu işimizi halledebilir
+
+
+FETCH table icerisinde bulunan elemanlari LIMIT yerine FETCH ile de cekebiliriz. 
+SELECT * FROM test OFFSET 5 FETCH FIRST 5 ROW ONLY;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

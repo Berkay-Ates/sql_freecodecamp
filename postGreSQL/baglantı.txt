@@ -1,0 +1,9 @@
+kod icerisinden postgresql ile  calışan bir noktaya baglantı kurarak istedigimiz bilgileri yazabilir ve
+silebiliriz. Ama bu işlemi direk veri tabanına baglanarak yapmamalıyız. Arada bir api olmalı istekler api ye
+ye gonderilmei. Api gelen istegi ve datayı alarak arkada calışan veri tabanına baglanarak ilgili işlemleri 
+yurutmeldir. 
+
+Bu sayede var olabilecek guvenlik acıkları en duşuk seviyeye indirilir. Acıkta yer alan bir veritabanı bulunmaz
+ve sadece bir api veri tabanına baglanmış olur. 
+
+

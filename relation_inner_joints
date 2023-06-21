@@ -1,0 +1,34 @@
+iki table icerisinde aralarinda ortak olarak bulunan kisimlarin başka bir table icerisinde yer almasina inner joint denir. 
+
+=> select * from person join car on person.car_id = car.id; 
+=> select * from person join car using (car_id);
+    birbiriyle eslesen alanlar bulunduran tum satirlari alip bize getirir 
+
+
+left join ve right join olaylari 
+
+=> Select * from person left join car on car.id = person.car_id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

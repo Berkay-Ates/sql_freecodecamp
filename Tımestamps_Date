@@ -1,0 +1,68 @@
+now isimli fonksiyon ile date tipindeki objeleri alabiliriz 
+
+=> DATE, TIME gibi anahtar kelimelerle 
+SELECT NOW()::DATE; 
+SELECT NOW()::TIME; 
+
+=> tarihler arasi geri sarma veya ileri sarma islemleri yapabiliriz 
+    -> SELECT NOW() - INTERVAL '1 YEAR';
+    -> SELECT NOW() + INTERVAL '10 MONTHS';
+
+=> Degistirilen zaman parametresi cast edilebilir  
+    -> SELECT (NOW() - INTERVAL '10 MONTHS')::DATE;
+
+=> Tarih icerisinde sadece yil, saat bilgisine ulaşabiliriz
+    -> SELECT EXTRACT(YEAR FROM NOW());
+
+
+=> AGE FONKSIYONU 
+    elimizdeki tarihle suan arasinda gecmis olan zamani bulmak istersek AGE fonksiyonundan yararlanabiliriz 
+    -> SELECT AGE(şuanki zaman, eski tarih);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

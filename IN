@@ -1,0 +1,24 @@
+
+OR ile yaptigimiz coklu iliski baglantilarini istersek IN anahtar kelimesini kullanarak tek seferde yapabiliriz. 
+
+SELECT * FROM person WHERE country = 'Brazil' OR country = 'Holland' OR country = 'France';
+SELECT * FROM person WHERE country IN ('Brazil','Holland','France');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

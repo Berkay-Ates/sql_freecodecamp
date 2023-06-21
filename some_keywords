@@ -1,0 +1,21 @@
+Coalesce fonksiyonu icine aldigi parametrelerden ilk null olmayanini ekrana bastirir
+ 
+Select coalesce(1);
+select coalesce(null,1)
+
+test=# Select coalesce(email,'email NOT provided') from person; => email olmayan yerlere email NOT privided yazar.
+
+ 
+NULLIF 
+NULLIF fonksiyonu icerisine 2 tane parametre alir 2. parametre 1.ye eşitse null dondurur eger 2. parametre 1.ye eşit
+degilse bu defa 1. parametreyi dondurur.
+
+test=# Select 10/nullif(2,9); => 2 sayisi sifir olsaydi bizim icin sorun olusurdu bu yuzden 9 yerine sifir yazarak 
+                                 1. parametre 0 ise null dondurterek postgrenin herhangi bir hata firlatmasini 
+                                 engelleyebiliriz. 
+
+coalesce ve nullif
+select coalesce(select 10/ nullif(0,0),0);
+
+
+

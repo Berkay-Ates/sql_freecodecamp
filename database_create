@@ -1,0 +1,13 @@
+
+CREATE DATABASE test;       test diye database oluştur 
+DROP DATABASE test;         test isimli database i sil 
+
+=> Baglanti saglamak icin
+berkayates@Berkays-MacBook-Pro ~ % psql -h localhost -p 5432 -U berkayates test 
+
+=> listelenmiş olan tablodan baglanmak icin 
+\c database (you are now connected to database "dbName" as user berkayates)
+
+!!! VEry Very dangerus command 
+
+=>  

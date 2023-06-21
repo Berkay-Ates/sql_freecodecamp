@@ -1,0 +1,25 @@
+
+TAble icerisinde conditional yani koşullu sorgular yazmak istersek Where anahtar kelimesini kullanırız. 
+SELECT * FROM person WHERE gender = 'Female';
+
+
+Birden fazla conditionu baglamak icin kullanilan anahtar kelime ise AND dir 
+SELECT * FROM person WHERE gender = 'Female' AND country = 'australia'; 
+
+
+Eger aradigimiz kosulun birden fazla ihtimali olabilirse bu defa da OR anahtar kelimesini kullaniriz 
+SELECT * FROM person WHERE gender = 'Female' AND (country = 'australia' OR country = 'Brazil');
+
+AND lerin sayisini istedigimiz kadar arttirabiliriz. 
+SELECT * FROM person WHERE gender = 'Polygender' AND (country_of_birth = 'Turkey' OR country_of_birth = 'Afghanistan') 
+AND last_name = 'Joselin';
+
+
+
+
+
+
+
+
+
+

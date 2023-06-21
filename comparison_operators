@@ -1,0 +1,39 @@
+SELECT 1<1 
+f 
+
+SELECT 2<1
+f 
+
+SELECT 1<=1
+t
+
+SELECT 1==1
+t
+
+SELECT 1<>2  // not equal 
+t 
+
+SELECT 'BERKAY' <> 'berkay'
+t 
+
+SELECT 'BERKAY' <> 'BERKAY'
+f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

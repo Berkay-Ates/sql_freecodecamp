@@ -1,0 +1,40 @@
+TAble icerisinde bulunan alanlari guncelleyebiliriz. Guncelleme isleminde istersek birden fazla column veya rowu 
+guncelleyebilirken istersek de sadce bir alani guncelleyebiliriz. 
+
+=> UPDATE person SET email = 'omar@gmail.com'; 
+    -> Sorgu icerisinde herhangi bir filtreleme işlemi olmadigi icin tablo icinde bulunan tum alanlari gunceller 
+
+=> UPDATE person SET email = 'omar@gmail.com' WHERE id = 2011;
+    -> Sorgu icine where anahtar kelimesi ile bir filtreleme getirerek bu durum icin sadede id=2011 olan alani guncelleriz 
+
+=> UPDATE person SET first_name= 'yeni isim', last_name='montana' where id='2011';
+    -> birden fazla alani yukaridaki gibi tek seferde guncelleyebiliriz 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

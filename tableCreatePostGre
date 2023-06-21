@@ -1,0 +1,32 @@
+CREATE TABLE table_name (
+    Column name + data type + constraints if any;
+)
+
+CREATING TABLE WITHOUT CONSTRAINTS 
+
+CREATE TABLE table_name (
+    id int,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    gender VARCHAR(6),
+    data_of_birth Timestamp
+);
+
+Bu yonetemler oluşturulan Table propertyleri null olabilecekleri icin herhangi bir constraintsleri yoktur 
+
+
+\d ile veritabani icinde bulunan tüm tablelarin listesi getirilir
+DROP TABLE table_ismi => database iceridinde bulunan table_ismi adindaki table silinir 
+
+
+
+CREATING TABLE WITH CONSTRAINTS 
+
+CREATE TABLE table_name (
+   id BIGSERIAL not null primary key,
+   first_name varchar(50) not null,
+   last_name varchar(50) not null,
+   gender varchar(7) not null,
+   date_of_birth date not null,
+); 
+  

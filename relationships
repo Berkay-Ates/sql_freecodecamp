@@ -1,0 +1,52 @@
+Person has car - person can only have one car - car can belong to only one person 
+
+
+Foreign key = freign key is a key that references another row in a table primary key;
+
+create table car(
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    make VARCHAR(100) NOT NULL,
+    model VARCHAR(100) NOT NULL,
+    price NUMERIC(19, 2) NOT NULL 
+);
+
+create table person(
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    first_name VARCHAR(58) NOT NULL, 
+    Last_name VARCHAR(50) NOT NULL, 
+    gender VARCHAR(7) NOT NULL, 
+    email VARCHAR(100), 
+    date_of_birth DATE NOT NULL, 
+    country_of_birth VARCHAR(50) NOT NULL, 
+    car_id BIGINT REFERENCES car (id),
+    UNIQUE (car_id)
+);
+
+=> upadating foreign keys column 
+    update person set car_id=1 where id = 2;
+
+    *** olmayan bir arabanin id sinin personda bulunan bir objeye atanmasina izin verilmez  
+    *** atanmis olan bir id nin tekrardan baska bir person objesine atanmasina da izin verilmez 
+
+DELETING RECORDS WITH FOREIGN KEYS 
+=> normal sartlarda relational key olarak atanmis olan table rowlari hayatta silinemezler. Sql buna izin vermez. Cunku 
+    silinmesine izin verirse iliskisel veri tabaninda bozulmalar meydana gelir. 
+ => Dolyisiyla herhangi bir silme islemi yapmadan once var olan foreign key relation baglantisini koparmamiz gerekir. 
+    Bu baglantiyi koparmak icin baglanti field'ini sifirlayabiliriz veya da baglantinin sahibi olan objelerden birini 
+    silerek sonrasinda kalan diger objeyi de silebiliriz. 
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+sql icerisindeki verileri istersek csv formatinda disari export edebiliriz.
+
+
+=> \copy (select * from person left join car on car.id = person.car_id) to '/Users/berkayates/Desktop/veriler.csv'
+    Delimiter ',' CSV Header;
+
+
+
+

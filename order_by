@@ -1,0 +1,16 @@
+Table icindeki elemanlari ORDER BY keywordu ile ascending veya descending siralama ile siralayabiliriz.
+- Default olarak Ascending siralama yapilir. 
+
+SELECT * FROM table_name ORDER BY birth_Date ASC (default) 
+SELECT * FROM table_name ORDER BY birth_Date DESC; 
+
+
+DISTINCT 
+Tekrar eden ozelliklerin sadece 1 defa yazdirilmasini istersek sorgumuzu distinct ile yapmak zorundayiz. 
+Ornegin tum ulkeleri cektik ve ayni ulkenin sadece 1 defa tekrar etmesini istedik o zaman DISTINCT anahtar 
+kelimesini kullaniriz.
+
+SELECT DISTINCT country_of_birth FROM person; => tum ulkeleri yazdirir. 
+
+
+

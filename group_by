@@ -1,0 +1,17 @@
+Elemanlari gruplayarak cekmek istersek DISTINCT anahtar kelimesini kullaniriz. 
+Eger tekrar eden elemanlarin sayilari da ekranda gosterilsin istersek bu defa COUNT(*) fonksiyonunu kullaniriz.
+
+=> SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth 
+
+=> SELECT DISTINCT country_of_birth FROM person; => tum ulkeleri yazdirir. 
+
+
+Eger gruplar icerisinde en az n kadar tekrar etmiş olan kelimeleri istersek HAVING anahtar kelimesinden yararlaniriz 
+
+=> SELECT country_of_birth, COUNT(*) FROM person GROUP BY country_of_birth HAVING COUNT(*) > 5 ORDER BY country_of_birth
+COUNT HAVING gibi yapilar Aggregate fonksiyonlar olarak adlandirilirlar 
+
+
+
+
+

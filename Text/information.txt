@@ -1,0 +1,26 @@
+What is database 
+- store data 
+- manipulate data 
+- retrive data 
+
+POSTGRE 
+- Postgres is the databases 
+- Postgres is object relational database management system. 
+
+
+SQL 
+- Structured Query Language 
+- Sql is programming language 
+- SELECT first_name FROM person 
+- Manage data held in a relational database 
+- Stroed data in columns and rows 
+
+
+
+Relational Databases 
+- iki farklı tablo arasında oluşturulacak olan bir ilişkinin başka bir tabloda oluşturulması olayına 
+    relational database denir. 
+    
+
+
+

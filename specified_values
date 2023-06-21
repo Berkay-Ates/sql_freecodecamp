@@ -1,0 +1,13 @@
+
+Table columnlarının herhangi birinin sadece belirli degerlerden oluşmasını saglayabiliriz. 
+=> ALTER TABLE person ADD CONSTRAINT gender_constraint CHECK(gender = 'Female' OR gender = 'Male');
+
+-> bu kullanım sayesinde sadece belirli keylerden olusmasini istedigimiz alanları enumlarla yaptigimiz sinirlamalar 
+   gibi belirli degerler icerisinde olusmasini saglayabiliriz. 
+
+    
+
+
+
+
+

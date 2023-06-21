@@ -1,0 +1,17 @@
+
+
+Table icerisindeki elemanlari istedigimiz gibi silebiliriz. 
+
+=> DELETE FROM person ; -> person tableinin icindeki tüm elemanlari siler 
+
+=> Delete from person where gender ='Female' and country_of_birth= 'england';
+
+
+
+
+
+
+
+
+
+

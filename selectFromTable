@@ -1,0 +1,13 @@
+Table icerisinden herseyi cekmek icin SELECT * FROM the_table_name 
+
+Filtreleme yapma islemine 
+
+TABLE icerisinde sadece belli bir alani cekmek istersek 
+=> SELECT field_name from table1
+
+TABLE icerisinden birden fazla column bilgilerini cekmek istersek 
+=> SELECT first_field, second_field from table1 
+
+TABLE icerisinden 
+
+

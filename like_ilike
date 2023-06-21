@@ -1,0 +1,24 @@
+
+Table icindeki degiskenlerden icinde herhangi belirli bir patterni tutan elemanlari LIKE anahtar kelimesi ile filtreleriz 
+Ornegin .com ile biten emailleri secmek icin LIKE kullanilabilir 
+
+SELECT * FROM person WHERE email LIKE '%.com'; 
+
+
+Icerisinde sadece belirli bir patterni tutan ve başinda sonunda bulunanlarla ilgilenmedigimiz elemanlari filtrelerken 
+kullanmamiz gereken işlem ise %arananPattern% ile işlemi yapmaktir. 
+
+SELECT * FROM person WHERE email LIKE '%.google%'; 
+
+
+Belirli uzunlukta ve icerisinde istedigimiz karakter patternlerini tutan kelimeleri secmek istersek istedigimiz 
+uzunluk icin her bir karakteri _ ile belirtiriz 
+
+SELECT * FROM person WHERE email LIKE '_______@%'; => uzunlugu 7 karakterden oluşan mailleri al ve getir demektir
+
+
+
+Eger yaptigimiz string sorgusu herhangi bir şekilde case sensitive olmasini istemiyorsak ILIKE anahtar kelimesini 
+kullanmamiz gerekir. 
+
+SELECT * FROM person WHERE email ILIKE '%ABC';

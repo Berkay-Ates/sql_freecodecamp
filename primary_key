@@ -1,0 +1,43 @@
+
+Primary key unique dir hicbir elemanda ayni olamaz. 
+
+=> Table constraintlerini yikabiliriz 
+    Ornegin id parametresinin unique olmasini ayarlamiş olabiliriz. Bu ozelligi dusurebiliriz 
+    -> ALTER TABLE person DROP CONSTRAINT person_pkey;
+     
+
+Silmis oldugumuz primary keyi geri de gerirebiliriz 
+    -> ALTER TABLE person add primary key (id); => bu kodun calişabilmesi icin idnin her elemanda farkli 
+        degerde olmasi gerekir 
+
+*** Primary key olasini istedigimiz columndaki elemanlarin unique olmasi gereklidir. Yoksa column unique
+    unique olamaz. 
+
+
+HAVING UNIQUE ELEMENTS 
+    SELECT email, count(*) from person group by email;
+    SELECT email ,count(*) from person group by email having count(*) > 2;
+
+Table icerisinde bazi elemanlarin unique olmasini isteyebiliriz, bu elemanlarin unique olmasi primary key 
+olduklari anlamina gelmez. Primary keyler unique dir ama her unique olan column elemanlari primary keydir 
+gibi bir sarta sahip degiliz. 
+
+=> ALTER TABLE person ADD CONSTRAINT unique_email_address UNIQUE(email); -> tekrar eden bir email yoksa calisir
+=> ALTER TABLE person ADD ADD UNIQUE (email) -> postgre kendi otomatikman unique olan kisma isim atar 
+
+
+UNIQUE olan parametre constraintleri silinebilirde 
+=> ALTER TABLE PERSON DROP CONSTRAINT unique_email_address;
+  
+
+
+
+
+
+
+
+
+
+
+
+
